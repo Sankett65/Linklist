@@ -15,10 +15,18 @@ public class LinklistMain {
 //        l.addFirst(56);
 //        l.print();
 
+//        l.addFirst(56);
+//        l.addLast(30);
+//        l.addLast(70);
+//
+//        l.print();
+
+        l.addFirst(70);
         l.addFirst(56);
-        l.addLast(30);
-        l.addLast(70);
+        l.size();
+       l.insert(30,1);
 
         l.print();
+
     }
 }
