@@ -7,4 +7,9 @@ public class Node {
     public Node(int number) {
         this.number = number;
     }
+
+    public Node(int number,Node next) {
+        this.number = number;
+        this.next = next;
+    }
 }
