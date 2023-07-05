@@ -44,12 +44,21 @@ public class LinklistMain {
 //        l.deleteFirst();
 //        l.print();
 
+
+        //   Deleting element using deleteLast method
+//        l.addFirst(70);
+//        l.addFirst(30);
+//        l.addFirst(56);
+//        l.print();
+//        System.out.println();
+//        l.deleteLast();
+//        l.print();
+
         l.addFirst(70);
         l.addFirst(30);
         l.addFirst(56);
         l.print();
         System.out.println();
-        l.deleteLast();
-        l.print();
+        System.out.println(l.find(30));
     }
 }

@@ -73,6 +73,19 @@ public class Linklist {
       }
       secondLast.next=null;
    }
+
+   public boolean find(int data){
+       Node temp =head;
+       while (temp!=null){
+           if (temp.number==data){
+               System.out.println("Element is found ");
+               return true;
+           }
+           temp=temp.next;
+       }
+       System.out.println("Element is not found");
+       return false;
+   }
    public void print(){
        if (head==null){
            System.out.println("Empty");
