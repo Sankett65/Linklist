@@ -54,11 +54,22 @@ public class LinklistMain {
 //        l.deleteLast();
 //        l.print();
 
+        //   Ability to find element is there or not
+//        l.addFirst(70);
+//        l.addFirst(30);
+//        l.addFirst(56);
+//        l.print();
+//        System.out.println();
+//        l.find(30);
+
+
         l.addFirst(70);
         l.addFirst(30);
         l.addFirst(56);
         l.print();
-        System.out.println();
-        System.out.println(l.find(30));
+        l.insertAtParticularPosition(40,30);
+        l.print();
+           
+
     }
 }
