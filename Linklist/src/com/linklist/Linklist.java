@@ -54,15 +54,24 @@ public class Linklist {
    }
 
 
-   public int deleteFirst(){
+   public void deleteFirst(){
        if (head ==null){
            System.out.println("Empty'");
        }
-       int temp=head.number;
+         head=head.next;
+   }
 
-       head =head.next;
-
-       return head.number;
+   public void deleteLast(){
+       if (head==null){
+           System.out.println("Empty");
+       }
+       Node secondLast=head;
+       Node  last=head.next;
+      while (last.next!=null){
+          last=last.next;
+          secondLast=secondLast.next;
+      }
+      secondLast.next=null;
    }
    public void print(){
        if (head==null){

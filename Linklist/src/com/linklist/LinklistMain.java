@@ -35,12 +35,21 @@ public class LinklistMain {
 //        l.print();
 
 
+        //   Deleting element using deleteFirst Method
+//        l.addFirst(70);
+//        l.addFirst(30);
+//        l.addFirst(56);
+//        l.print();
+//        System.out.println();
+//        l.deleteFirst();
+//        l.print();
+
         l.addFirst(70);
         l.addFirst(30);
         l.addFirst(56);
         l.print();
         System.out.println();
-        l.deleteFirst();
+        l.deleteLast();
         l.print();
     }
 }
