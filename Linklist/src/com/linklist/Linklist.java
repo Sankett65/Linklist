@@ -53,6 +53,17 @@ public class Linklist {
          temp.next=newNode;
    }
 
+
+   public int deleteFirst(){
+       if (head ==null){
+           System.out.println("Empty'");
+       }
+       int temp=head.number;
+
+       head =head.next;
+
+       return head.number;
+   }
    public void print(){
        if (head==null){
            System.out.println("Empty");
