@@ -74,17 +74,35 @@ public class Linklist {
       secondLast.next=null;
    }
 
-   public boolean find(int data){
+   public void find(int data){
        Node temp =head;
+       int index=-1;
        while (temp!=null){
+           index++;
            if (temp.number==data){
-               System.out.println("Element is found ");
-               return true;
+               System.out.println("\nElement is found");
+
+               break;
            }
            temp=temp.next;
+
        }
-       System.out.println("Element is not found");
-       return false;
+       System.out.println("\nIndex position is "+index);
+   }
+
+   public void insertAtParticularPosition(int data,int element) {
+       Node temp = head;
+       int index = 0;
+       while (temp.next != null) {
+           index++;
+           if (temp.number == element) {
+               break;
+           }
+           temp = temp.next;
+       }
+       System.out.println("\nIndex position is " + index);
+       insert(data ,index);
+
    }
    public void print(){
        if (head==null){
