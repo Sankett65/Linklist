@@ -127,6 +127,59 @@ public class Linklist {
      temp.next=temp.next.next;
        temp=null;
    }
+
+   public void sort(){
+
+       Node temp=head;
+       Node index=null;
+       int temp1;
+       if (head==null){
+           return;
+       }else {
+           while (temp!=null){
+               index=temp.next;
+               while (index!=null){
+                   if (temp.number>index.number){
+                       temp1=temp.number;
+                       temp.number=index.number;
+                       index.number=temp1;
+                   }
+                   index=index.next;
+               }
+               temp=temp.next;
+           }
+       }
+//     int size=0;
+//   if (head!=null) {
+//       Node temp =head;
+//       while (temp != null) {
+//           temp = temp.next;
+//           size++;
+//       }
+//   }
+//       //System.out.println(size);
+//
+//     for (int i =0;i<size;i++){
+//         for (int j=0;j<size-i-1;j++){
+//             Node temp=head;
+//             Node temp1=temp.next;
+//             int s;
+//             if (temp.number>temp1.number){
+//                 s = temp.number;
+//                 temp1.number=temp.number;
+//                 temp.number=s;
+//             }
+//             temp=temp1;
+//             temp1=temp1.next;
+//         }
+//     }
+//     Node temp2=head;
+//     while(temp2!=null){
+//         System.out.print("\n"+temp2.number);
+//         temp2=temp2.next;
+//     }
+
+   }
    public void print(){
        if (head==null){
            System.out.println("Empty");
