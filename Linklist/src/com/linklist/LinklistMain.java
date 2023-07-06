@@ -62,14 +62,31 @@ public class LinklistMain {
 //        System.out.println();
 //        l.find(30);
 
+//        l.addFirst(70);
+//        l.addFirst(30);
+//        l.addFirst(56);
+//        l.print();
+//        l.insertAtParticularPosition(40,30);
+//        l.print();
 
+//        System.out.println();
+//       // l.get(1);
+//        l.delete(30);
+//        l.print();
+//
         l.addFirst(70);
         l.addFirst(30);
         l.addFirst(56);
         l.print();
+        System.out.println();
         l.insertAtParticularPosition(40,30);
         l.print();
-           
+        System.out.println();
+        l.delete(40);
+        l.print();
+
+
+
 
     }
 }
